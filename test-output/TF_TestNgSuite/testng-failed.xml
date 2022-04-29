@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TF_TestNgSuite]">
+  <test thread-count="5" name="TC_TestPage_001(failed)">
+    <parameter name="outbound" value="100"/>
+    <parameter name="inputCategory" value="TestNGTest"/>
+    <classes>
+      <class name="tests.ValidateMonthDropDown">
+        <methods>
+          <include name="validateAllmonths"/>
+        </methods>
+      </class> <!-- tests.ValidateMonthDropDown -->
+    </classes>
+  </test> <!-- TC_TestPage_001(failed) -->
+</suite> <!-- Failed suite [TF_TestNgSuite] -->

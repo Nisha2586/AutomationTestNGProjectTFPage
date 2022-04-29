@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TF_TestNgSuite" parallel = "classes" thread-count ="3" >
+	<test name="TC_TestPage_001">
+		<parameter name="inputCategory" value="TestNGTest" />
+		<parameter name="outbound" value="100" />
+		
+		<classes>
+			<class name="tests.AddAndDisplayCategoryTest" />
+			<class name="tests.ValidateDuplicateCategoryTest" />
+			<class name="tests.ValidateMonthDropDown" />
+		</classes>
+	</test>
+</suite>
